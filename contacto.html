@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Contacto y Login</title>
+    <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #159895;
+            --accent-color: #57c5b6;
+            --background-color: #f0f4f8;
+            --text-color: #2c3e50;
+            --light-text: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Estilos de Contacto */
+        .contact-section {
+            display: flex;
+            min-height: 100vh;
+            background-color: var(--light-text);
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        .contact-form {
+            background-color: var(--background-color);
+        }
+
+        .contact-form h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--text-color);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Estilos de Login */
+        .login-section {
+            display: flex;
+            min-height: 100vh;
+            background-color: var(--background-color);
+        }
+
+        .login-container {
+            width: 400px;
+            margin: auto;
+            background-color: var(--light-text);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Tabla de Medios de Pago */
+        .payment-table-section {
+            padding: 50px;
+            background-color: var(--light-text);
+        }
+
+        .payment-table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .payment-table th {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 15px;
+            text-align: left;
+        }
+
+        .payment-table td {
+            padding: 15px;
+            border: 1px solid var(--secondary-color);
+        }
+
+        .payment-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .payment-table tr:hover {
+            background-color: var(--background-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección de Contacto -->
+    <section class="contact-section" id="contacto">
+        <div class="contact-info">
+            <h2>Contáctanos</h2>
+            <p>Estamos listos para ayudarte. Ponte en contacto con nuestro equipo de TechNova Solutions.</p>
+            <br>
+            <p>📍 Dirección: Av. Tecnología 123, Ciudad Innovación</p>
+            <p>📞 Teléfono: +52 55 1234 5678</p>
+            <p>✉️ Email: contacto@technova.com</p>
+        </div>
+        <div class="contact-form">
+            <form>
+                <h2>Formulario de Contacto</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Login -->
+    <section class="login-section" id="login">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form class="login-form">
+                <input type="text" placeholder="Nombre de Usuario" id="username" required>
+                <input type="password" placeholder="Contraseña" id="password" required>
+                <button type="submit" class="login-btn">Iniciar Sesión</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Tabla de Medios de Pago -->
+    <section class="payment-table-section" id="medios-pago">
+        <h2 style="text-align:center; color:var(--primary-color); margin-bottom:30px;">Registro de Medios de Pago</h2>
+        <table class="payment-table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre del Medio de Pago</th>
+                    <th>Tipo</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Tarjeta de Crédito Visa</td>
+                    <td>Crédito</td>
+                    <td>Activo</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>PayPal</td>
+                    <td>Digital</td>
+                    <td>Activo</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Transferencia Bancaria</td>
+                    <td>Bancario</td>
+                    <td>Activo</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Tarjeta de Débito MasterCard</td>
+                    <td>Débito</td>
+                    <td>Activo</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

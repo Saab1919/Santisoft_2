@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #1a5f7a;
+    --secondary-color: #159895;
+    --accent-color: #57c5b6;
+    --background-color: #f0f4f8;
+    --text-color: #2c3e50;
+    --light-text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.payment-table-section {
+    padding: 50px;
+    background-color: var(--light-text);
+}
+
+.payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.payment-table th {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 15px;
+    text-align: left;
+}
+
+.payment-table td {
+    padding: 15px;
+    border: 1px solid var(--secondary-color);
+}
+
+.payment-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.payment-table tr:hover {
+    background-color: var(--background-color);
+}
